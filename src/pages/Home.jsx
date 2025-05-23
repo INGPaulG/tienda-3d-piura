@@ -9,7 +9,7 @@ function Home() {
     <div className="text-center px-4 py-10 max-w-6xl mx-auto">
       {/* Banner / Imagen principal */}
       <img
-        src="https://cdn.pixabay.com/photo/2015/05/31/11/31/3d-791205_1280.jpg"
+        src="https://images.pexels.com/photos/19124461/pexels-photo-19124461/free-photo-of-herramientas-de-impresion-3d.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Impresión 3D Factory Piura"
         className="mx-auto mb-6 w-full max-h-96 object-cover rounded-lg shadow-lg"
       />
