@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
-import Pedidos from './pages/pedidos'
+import Pedidos from './pages/Pedidos'
 import Navbar from './components/NavBar'
 import { Routes, Route } from "react-router-dom";
 
