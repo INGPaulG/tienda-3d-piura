@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
 const numeroWhatsApp = '51945244304'
 const mensaje = encodeURIComponent(`Hola, Deseo consultar por un trabajo personalizado.`)
@@ -6,7 +7,9 @@ const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
 function Home() {
   return (
+   
     <div className="text-center px-4 py-10 max-w-6xl mx-auto">
+    < Header />
       {/* Banner / Imagen principal */}
       <img
         src="https://images.pexels.com/photos/19124461/pexels-photo-19124461/free-photo-of-herramientas-de-impresion-3d.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

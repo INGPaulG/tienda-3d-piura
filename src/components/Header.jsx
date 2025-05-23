@@ -1,31 +1,20 @@
 import { Link, useLocation } from "react-router-dom";
 
-function Header() {
-  const location = useLocation()
-  const linkClass = (path) =>
-    `px-4 py-2 rounded transition ${
-      location.pathname === path
-        ? 'bg-purple-600 text-white'     
-        : 'text-purple-700 hover:bg-purple-100'
-    }`
-  
+const Header = () => {
   return (
-    // Encabezado con fondo blanco y sombra (Tailwind: bg-white shadow-md)
-    <header className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Título de la página */}
-        <h1 className="text-2xl font-bold text-purple-700">3D Factory</h1>
-
-        {/* Navegación con 3 enlaces */}
-        <nav className="space-x-4">
-          {/* Cada Link te lleva a una ruta */}
-          <Link to="/" className={linkClass('/')}>Inicio</Link>
-          <Link to="/productos" className={linkClass('/productos')}>Productos</Link>
-          <Link to="/contacto" className={linkClass('/contacto')}>Contacto</Link>
-        </nav>
-      </div>
+    <header className="bg-gradient-to-r from-orange-400 to-yellow-300 text-white py-16 px-4 text-center">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">Bienvenido a la Tienda 3D Factory</h1>
+      <p className="text-lg sm:text-xl mb-6 max-w-xl mx-auto">
+        Diseños únicos, regalos personalizados y modelos increíbles impresos en 3D. 🎁🦖✨
+      </p>
+      <a
+        href="/productos"
+        className="bg-white text-orange-500 font-bold px-6 py-3 rounded-full shadow hover:bg-orange-100 transition"
+      >
+        Ver Productos
+      </a>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;
