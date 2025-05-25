@@ -7,7 +7,7 @@ function ProductCard({ producto }) {
     }. ¿Está disponible?`
   );
   const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
-  const precioAnterior = (producto.precio * 1.2).toFixed(2); // 20% más
+  const precioAnterior = (producto.precio * 1.2).toFixed(2); // 20% decuento
 
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col hover:scale-105 transition">

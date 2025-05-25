@@ -13,7 +13,7 @@ function Home() {
       <h2 className="text-2xl font-bold mt-12 mb-6 text-center text-red-600">🔥 Productos en Oferta 🔥</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* Producto 1 */}
+            {/* producto 1 */}
             <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition">
               <img src="https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg" alt="Dino articulado" className="w-full h-40 object-contain mb-4" />
               <h3 className="font-semibold text-lg mb-2">Funko personalizado</h3>
@@ -32,7 +32,7 @@ function Home() {
               </a>
             </div>
 
-            {/* Producto 2 */}
+            {/* producto 2 */}
             <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition">
               <img src="https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Dino articulado" className="w-full h-40 object-contain mb-4" />
               <h3 className="font-semibold text-lg mb-2">Dinosaurio Flex</h3>
@@ -52,7 +52,7 @@ function Home() {
             </div>
           </div>
 
-      {/* Banner / Imagen principal */}
+      {/* banner / imagen principal */}
       <img
         src="https://images.pexels.com/photos/19124461/pexels-photo-19124461/free-photo-of-herramientas-de-impresion-3d.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Impresión 3D Factory Piura"
@@ -69,7 +69,7 @@ function Home() {
         y lámparas. Puedes explorar nuestro catálogo o pedir algo hecho solo para ti.
       </p>
 
-      {/* Botones de acción */}
+      {/* botones de acción */}
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <Link
           to="/productos"

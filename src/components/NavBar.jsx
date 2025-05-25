@@ -1,17 +1,17 @@
 
 
-import { Link } from 'react-router-dom'; // <-- Importar Link para navegación entre páginas
+import { Link } from 'react-router-dom'; // <-- Link para navegacioon entre paginas
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Nombre o logo */}
+        {/* nombre o logo */}
         <Link to="/" className="text-xl font-bold">
-          Tienda 3D
+          3D Factory Piura
         </Link>
 
-        {/* Enlaces de navegación */}
+        {/* enlaces de navegación */}
         <div className="flex space-x-4">
           <Link to="/" className="hover:text-yellow-400">Inicio</Link>
           <Link to="/productos" className="hover:text-yellow-400">Productos</Link>

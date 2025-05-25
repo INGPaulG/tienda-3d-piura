@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// Lista de productos con categoría (precio como número)
 const productos = [
   {
     id: 1,
@@ -50,6 +49,14 @@ const productos = [
     imagen: 'https://makerworld.bblmw.com/makerworld/model/USf713268f7c876a/design/2024-09-11_e5ae0c6af9f17.png?x-oss-process=image/resize,w_1000/format,webp',
     oferta: false,
   },
+  {
+    id: 7,
+    nombre: 'Camaleón Flexible',
+    categoria: 'Dinosaurios',
+    precio: 19.90,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US3af6b28383cad6/design/2025-03-11_129e8330faddc.jpg?x-oss-process=image/resize,w_1000/format,webp',
+    oferta: false,
+  },
 ];
 
 const numeroWhatsApp = '51945244304';
@@ -70,7 +77,7 @@ function Products() {
     <div className="p-6 max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center text-purple-700">Catálogo de Productos</h2>
 
-      {/* Búsqueda */}
+      {/* busqueda */}
       <input
         type="text"
         placeholder="Buscar producto..."
@@ -79,7 +86,7 @@ function Products() {
         className="w-full mb-4 px-4 py-2 border rounded shadow-sm"
       />
 
-      {/* Filtros */}
+      {/* filtrps */}
       <div className="flex flex-wrap gap-2 mb-6">
         {categorias.map(cat => (
           <button
@@ -96,7 +103,7 @@ function Products() {
         ))}
       </div>
 
-      {/* Productos */}
+      {/* productos */}
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {productosFiltrados.map(producto => {
           const mensaje = encodeURIComponent(
@@ -104,7 +111,7 @@ function Products() {
           );
           const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
-          const precioAnterior = (producto.precio * 1.177).toFixed(2); // 20% más
+          const precioAnterior = (producto.precio * 1.177).toFixed(2); // el porcentaje de descuento
 
           return (
             <div key={producto.id} className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col hover:scale-105 transition">
