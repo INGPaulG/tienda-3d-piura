@@ -1,56 +1,72 @@
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
+import { Link } from "react-router-dom"
+import Header from "../components/Header"
+import productos from "../Data/productos"
+import noticias from "../Data/noticias"
 
 const numeroWhatsApp = '51945244304'
 const mensaje = encodeURIComponent(`Hola, Deseo consultar por un trabajo personalizado.`)
-const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`
 
 function Home() {
+  const productosEnOferta = productos.filter(p => p.descuento > 0);
+  const ultimaNoticia = noticias[0];
+
   return (
-   
     <div className="text-center px-4 py-10 max-w-6xl mx-auto">
-    < Header />
+      <Header />
       <h2 className="text-2xl font-bold mt-12 mb-6 text-center text-red-600">🔥 Productos en Oferta 🔥</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* producto 1 */}
-            <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition">
-              <img src="https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg" alt="Dino articulado" className="w-full h-40 object-contain mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Funko personalizado</h3>
-              <p className="text-sm text-gray-500 line-through">S/ 102.00</p>
-              <p className="text-xl text-green-600 font-bold mb-2">S/ 85.00</p>
-              <a
-                href="https://wa.me/51945244304?text=Hola, quiero comprar el Dino articulado en oferta 🦖🔥"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mt-2"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M16.6 13.4L11 18l-5.6-4.6L5 12l6 5 6-5z"></path>
-                </svg>
-                Comprar
-              </a>
-            </div>
+      {/* Sección de productos en oferta */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        {productosEnOferta.map(producto => {
+          const tieneDescuento = producto.descuento > 0;
+          const precioConDescuento = (producto.precio * (1 - producto.descuento / 100)).toFixed(2);
+          const mensaje = encodeURIComponent(`Hola, quiero comprar el producto "${producto.nombre}" en oferta 🔥`);
+          const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
-            {/* producto 2 */}
-            <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition">
-              <img src="https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Dino articulado" className="w-full h-40 object-contain mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Dinosaurio Flex</h3>
-              <p className="text-sm text-gray-500 line-through">S/ 11.65</p>
-              <p className="text-xl text-green-600 font-bold mb-2">S/ 9.90</p>
+          return (
+            <div key={producto.id} className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition">
+              <img src={producto.imagen} alt={producto.nombre} className="w-full h-40 object-contain mb-4" />
+              <h3 className="font-semibold text-lg mb-2">{producto.nombre}</h3>
+              <p className="text-sm text-gray-500 line-through">S/ {producto.precio.toFixed(2)}</p>
+              <p className="text-xl text-green-600 font-bold mb-2">S/ {precioConDescuento}</p>
+              <span className="inline-block text-xs bg-red-500 text-white px-2 py-1 rounded-full mt-1">
+                -{producto.descuento}% de descuento
+              </span>
               <a
-                href="https://wa.me/51945244304?text=Hola, quiero comprar el Dino articulado en oferta 🦖🔥"
+                href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mt-2"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mt-4"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M16.6 13.4L11 18l-5.6-4.6L5 12l6 5 6-5z"></path>
-                </svg>
                 Comprar
               </a>
             </div>
+          );
+        })}
+      </div>
+      
+      {/* Última Noticia Destacada */}
+      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md shadow mb-10">
+        <h3 className="text-xl font-bold text-yellow-700 mb-2">📰 Última Noticia</h3>
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          <img
+            src={ultimaNoticia.imagen}
+            alt={ultimaNoticia.titulo}
+            className="w-full sm:w-48 h-32 object-cover rounded"
+          />
+          <div className="text-left">
+            <h4 className="text-lg font-semibold text-gray-800">{ultimaNoticia.titulo}</h4>
+            <p className="text-sm text-gray-600">{ultimaNoticia.descripcion}</p>
+            <Link
+              to="/noticias"
+              className="inline-block mt-2 text-purple-700 font-medium hover:underline"
+            >
+              Ver todas las noticias →
+            </Link>
           </div>
+        </div>
+      </div>
 
       {/* banner / imagen principal */}
       <img
