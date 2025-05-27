@@ -45,7 +45,7 @@ function Home() {
           );
         })}
       </div>
-      
+
       {/* Última Noticia Destacada */}
       <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md shadow mb-10">
         <h3 className="text-xl font-bold text-yellow-700 mb-2">📰 Última Noticia</h3>

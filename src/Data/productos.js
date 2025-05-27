@@ -9,7 +9,7 @@ const productos = [
     nombre: 'Dinosaurio Flex',
     categoria: 'Dinosaurios',
     precio: 12.90,
-    descuento: 25, // 20% de descuento
+    descuento: 30, // 20% de descuento
     imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -56,9 +56,57 @@ const productos = [
     id: 7,
     nombre: 'Camaleón Flexible',
     categoria: 'Dinosaurios',
-    precio: 19.90,
-    descuento: 25,
+    precio: 25,
+    descuento: 26,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US3af6b28383cad6/design/2025-03-11_129e8330faddc.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 8,
+    nombre: 'Bebé T Rex Dinosaurio Flexible',
+    categoria: 'Dinosaurios',
+    precio: 14,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/USa455a8bf300216/design/2024-11-20_dc803cfa913e9.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 9,
+    nombre: 'Llavero de amantes del café',
+    categoria: 'Llaveros',
+    precio: 14,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000633459/design/2024-09-10_91ec8f42d43ae.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 11,
+    nombre: 'Cráneo de Trex con base',
+    categoria: 'Dinosaurios',
+    precio: 85,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US883ab09b77dd4a/design/2024-07-18_6882e82397693.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 12,
+    nombre: 'Cráneo de Dilophosaurus, dinosaurio',
+    categoria: 'Dinosaurios',
+    precio: 55,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/USbd51a05a6d52de/design/2025-03-04_e8165e937016b.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 13,
+    nombre: 'Embrión de Raptor en Arte de Cuerda Suspendido',
+    categoria: 'Dinosaurios',
+    precio: 75,
+    descuento: 10,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US4be1da318d35a4/design/2024-01-25_ef1fbb1dec0ed.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 14,
+    nombre: 'Dinosaurio T-Rex de Google en 3D',
+    categoria: 'Dinosaurios',
+    precio: 13,
+    descuento: 16,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US11d240ea36a5b3/design/2024-02-04_15f3ed12c9028.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
 ];
 
