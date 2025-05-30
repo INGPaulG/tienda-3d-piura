@@ -80,7 +80,7 @@ const productos = [
     id: 11,
     nombre: 'Cráneo de Trex con base',
     categoria: 'Dinosaurios',
-    precio: 85,
+    precio: 75,
     descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US883ab09b77dd4a/design/2024-07-18_6882e82397693.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
@@ -96,7 +96,7 @@ const productos = [
     id: 13,
     nombre: 'Embrión de Raptor en Arte de Cuerda Suspendido',
     categoria: 'Dinosaurios',
-    precio: 75,
+    precio: 60,
     descuento: 10,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US4be1da318d35a4/design/2024-01-25_ef1fbb1dec0ed.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
@@ -108,6 +108,23 @@ const productos = [
     descuento: 16,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US11d240ea36a5b3/design/2024-02-04_15f3ed12c9028.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
+  {
+    id: 15,
+    nombre: 'DinosaLlaveros giratorios giroscópicosurios',
+    categoria: 'Llaveros',
+    precio: 9,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US25e091baddddac/design/2024-12-07_5e6dfe64335e08.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 16,
+    nombre: 'Dinosaurios Elegante',
+    categoria: 'Dinosaurios',
+    precio: 14,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/USf262c5c6bdcc09/design/2025-05-28_883c8c141f61c.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+
 ];
 
 export default productos;
