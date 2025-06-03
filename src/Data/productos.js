@@ -13,14 +13,6 @@ const productos = [
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US406cfb82277f01/design/2025-02-20_195e930294e51.png?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
-    id: 1,
-    nombre: 'Dinosaurio Flex',
-    categoria: 'Dinosaurios',
-    precio: 12,
-    descuento: 0,
-    imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
-  },
-  {
     id: 2,
     nombre: 'Llavero exceso',
     categoria: 'Llaveros',
@@ -35,14 +27,6 @@ const productos = [
     precio: 100.00,
     descuento: 10, // 10% de descuento
     imagen: 'https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg',
-  },
-  {
-    id: 4,
-    nombre: 'Litografía Lilo y Stitch',
-    categoria: 'Litografías',
-    precio: 54.90,
-    descuento: 0,
-    imagen: 'https://makerworld.bblmw.com/makerworld/model/US86dd8dbdaf9409/design/2025-04-02_8c4380172dedb.png?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 4,
@@ -155,6 +139,14 @@ const productos = [
     precio: 45,
     descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/USb7d0c95cc8bdb8/design/2024-07-18_be6e6516745f9.jpeg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 19,
+    nombre: 'Dinosaurio Flex',
+    categoria: 'Dinosaurios',
+    precio: 12,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
 ];
 
