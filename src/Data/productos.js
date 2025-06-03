@@ -6,10 +6,18 @@
 const productos = [
   {
     id: 1,
+    nombre: 'Pokebola',
+    categoria: 'Pokemon',
+    precio: 25,
+    descuento: 20,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US406cfb82277f01/design/2025-02-20_195e930294e51.png?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 1,
     nombre: 'Dinosaurio Flex',
     categoria: 'Dinosaurios',
-    precio: 12.90,
-    descuento: 30, // 20% de descuento
+    precio: 12,
+    descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -25,7 +33,7 @@ const productos = [
     nombre: 'Funko personalizado',
     categoria: 'Funkos',
     precio: 100.00,
-    descuento: 15, // 15% de descuento
+    descuento: 10, // 10% de descuento
     imagen: 'https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg',
   },
   {
@@ -35,6 +43,14 @@ const productos = [
     precio: 54.90,
     descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US86dd8dbdaf9409/design/2025-04-02_8c4380172dedb.png?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 4,
+    nombre: 'Llavero pokebola',
+    categoria: 'Pokemon',
+    precio: 12,
+    descuento: 16.7,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US2d946ac12830f5/design/2024-08-27_6187a0087ced8.png?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 5,
@@ -57,7 +73,7 @@ const productos = [
     nombre: 'Camaleón Flexible',
     categoria: 'Dinosaurios',
     precio: 25,
-    descuento: 26,
+    descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US3af6b28383cad6/design/2025-03-11_129e8330faddc.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -124,7 +140,22 @@ const productos = [
     descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/USf262c5c6bdcc09/design/2025-05-28_883c8c141f61c.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
-
+  {
+    id: 17,
+    nombre: 'Geólogo Dino Flexi',
+    categoria: 'Dinosaurios',
+    precio: 12,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US35c50eda07aa61/design/2025-02-23_b282b2c27c769.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 18,
+    nombre: 'Perro/lobo articulado de Minecraft',
+    categoria: 'Minecraft',
+    precio: 45,
+    descuento: 0,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/USb7d0c95cc8bdb8/design/2024-07-18_be6e6516745f9.jpeg?x-oss-process=image/resize,w_1000/format,webp',
+  },
 ];
 
 export default productos;
