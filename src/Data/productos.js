@@ -14,11 +14,11 @@ const productos = [
   },
   {
     id: 2,
-    nombre: 'Llavero exceso',
+    nombre: 'Llavero Papá',
     categoria: 'Llaveros',
-    precio: 9.90,
-    descuento: 0, // sin descuento
-    imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000001136045/design/2025-02-22_c8cfc59f8ddb.jpeg?x-oss-process=image/resize,w_1000/format,webp',
+    precio: 10,
+    descuento: 50, 
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/USe335d92373afaa/design/2025-03-06_16d672368d25.jpeg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 3,
@@ -147,6 +147,14 @@ const productos = [
     precio: 12,
     descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
+  },
+  {
+    id: 20,
+    nombre: 'Llavero exceso',
+    categoria: 'Llaveros',
+    precio: 9.90,
+    descuento: 0, // sin descuento
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000001136045/design/2025-02-22_c8cfc59f8ddb.jpeg?x-oss-process=image/resize,w_1000/format,webp',
   },
 ];
 
