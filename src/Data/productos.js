@@ -9,7 +9,7 @@ const productos = [
     nombre: 'Pokebola',
     categoria: 'Pokemon',
     precio: 25,
-    descuento: 20,
+    descuento: 0,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US406cfb82277f01/design/2025-02-20_195e930294e51.png?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -25,7 +25,7 @@ const productos = [
     nombre: 'Funko personalizado',
     categoria: 'Funkos',
     precio: 100.00,
-    descuento: 10, // 10% de descuento
+    descuento: 5, // 10% de descuento
     imagen: 'https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg',
   },
   {
@@ -33,7 +33,7 @@ const productos = [
     nombre: 'Llavero pokebola',
     categoria: 'Pokemon',
     precio: 12,
-    descuento: 16.7,
+    descuento: 55,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US2d946ac12830f5/design/2024-08-27_6187a0087ced8.png?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -73,23 +73,23 @@ const productos = [
     nombre: 'Llavero de amantes del café',
     categoria: 'Llaveros',
     precio: 14,
-    descuento: 0,
+    descuento: 50,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000633459/design/2024-09-10_91ec8f42d43ae.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 11,
     nombre: 'Cráneo de Trex con base',
     categoria: 'Dinosaurios',
-    precio: 75,
-    descuento: 0,
+    precio: 35,
+    descuento: 40,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US883ab09b77dd4a/design/2024-07-18_6882e82397693.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 12,
     nombre: 'Cráneo de Dilophosaurus, dinosaurio',
     categoria: 'Dinosaurios',
-    precio: 55,
-    descuento: 0,
+    precio: 35,
+    descuento: 40,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/USbd51a05a6d52de/design/2025-03-04_e8165e937016b.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -97,7 +97,7 @@ const productos = [
     nombre: 'Embrión de Raptor en Arte de Cuerda Suspendido',
     categoria: 'Dinosaurios',
     precio: 60,
-    descuento: 10,
+    descuento: 50,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/US4be1da318d35a4/design/2024-01-25_ef1fbb1dec0ed.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -136,8 +136,8 @@ const productos = [
     id: 18,
     nombre: 'Perro/lobo articulado de Minecraft',
     categoria: 'Minecraft',
-    precio: 45,
-    descuento: 0,
+    precio: 40,
+    descuento: 37.5,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/USb7d0c95cc8bdb8/design/2024-07-18_be6e6516745f9.jpeg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
@@ -145,7 +145,7 @@ const productos = [
     nombre: 'Dinosaurio Flex',
     categoria: 'Dinosaurios',
     precio: 12,
-    descuento: 0,
+    descuento: 41.7,
     imagen: 'https://makerworld.bblmw.com/makerworld/model/DSM00000000910910/design/2024-12-25_b30ceacea8ca5.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
