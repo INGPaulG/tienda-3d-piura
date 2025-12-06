@@ -14,11 +14,11 @@ const productos = [
   },
   {
     id: 2,
-    nombre: 'Llavero Papá',
-    categoria: 'Llaveros',
+    nombre: 'Angel de Navidad',
+    categoria: 'Adornos',
     precio: 10,
-    descuento: 50, 
-    imagen: 'https://makerworld.bblmw.com/makerworld/model/USe335d92373afaa/design/2025-03-06_16d672368d25.jpeg?x-oss-process=image/resize,w_1000/format,webp',
+    descuento: 35, 
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US9ce6322a70239f/design/2025-12-01_39b996ad2f3a9.webp?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 3,
@@ -38,11 +38,11 @@ const productos = [
   },
   {
     id: 5,
-    nombre: 'Lámpara de escritorio Harry Potter 9 3/4',
-    categoria: 'Lámparas',
-    precio: 85.00,
-    descuento: 10,
-    imagen: 'https://makerworld.bblmw.com/makerworld/model/USe6c161b2e4daa8/design/2024-07-28_8480931da207a.jpg?x-oss-process=image/resize,w_1000/format,webp',
+    nombre: 'Barco Benchy adorno',
+    categoria: 'Adornos',
+    precio: 7.5,
+    descuento: 36,
+    imagen: 'https://makerworld.bblmw.com/makerworld/model/US2262720d55a8f6/design/2023-10-14_23cb0ce37bc8d.jpg?x-oss-process=image/resize,w_1000/format,webp',
   },
   {
     id: 6,

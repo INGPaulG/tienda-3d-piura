@@ -3,17 +3,17 @@
 const noticias = [
   {
     id: 1,
-    titulo: "Participa en nuestro sorteo de Figuras 3D",
-    fecha: "2025-05-30",
-    descripcion: "Este mes sorteamos un pulpo-flex y un cupon de descuento del  30% . ¡Para Participar siguenos en nuestras redes, envia capturas al DM de instagram y estaras participando!",
-    imagen: "https://makerworld.bblmw.com/makerworld/model/USa455a8bf300216/design/2024-11-20_dc803cfa913e9.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    titulo: "Ofertas especiales por Navidad",
+    fecha: "06/12/2025",
+    descripcion: "Aprovecha nuestras ofertas especiales en adornos navideños y llaveros temáticos. ¡Decora tu hogar con estilo esta Navidad!",
+    imagen: "https://makerworld.bblmw.com/makerworld/model/USc441e71993346/design/2024-12-01_c56a94a7c8cb3.jpg?x-oss-process=image/resize,w_1000/format,webp",
   },
   {
     id: 2,
-    titulo: "¡Proximamente Ofertas por el dia del Padre!",
-    fecha: "2025-05-30",
-    descripcion: "Ya puedes conseguir nuestros Funkos personalizados al 15% de descuento. ¡Sorprendentes y divertidos!",
-    imagen: "https://cdn.pixabay.com/photo/2022/02/03/11/23/harry-potter-6990246_1280.jpg",
+    titulo: "¡Participa en nuestro Sorteo Navideño 2025!",
+    fecha: "06/12/2025",
+    descripcion: "Estas fiestas, participa en nuestro sorteo especial y gana fantásticos premios. ¡No te lo pierdas!",
+    imagen: "https://makerworld.bblmw.com/makerworld/model/USda6a013373ce9b/design/2023-11-14_70547d0f73075.jpg?x-oss-process=image/resize,w_1000/format,webp",
   },
   
 ];
